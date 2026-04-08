@@ -3,7 +3,7 @@
 
 type AppRoutes = "/" | "/dashboard" | "/dashboard/admin" | "/dashboard/admin/business-center" | "/dashboard/instructor" | "/dashboard/staff" | "/dashboard/student" | "/signin" | "/signup"
 type AppRouteHandlerRoutes = "/api/auth/callback"
-type PageRoutes = "/404" | "/about" | "/blog" | "/blog/[slug]" | "/contact" | "/courses" | "/courses/description/[courseId]" | "/privacy" | "/staff" | "/terms"
+type PageRoutes = "/404" | "/_app" | "/about" | "/blog" | "/blog/[slug]" | "/contact" | "/courses" | "/courses/description/[courseId]" | "/privacy" | "/staff" | "/terms"
 type LayoutRoutes = "/" | "/dashboard"
 type RedirectRoutes = never
 type RewriteRoutes = never
@@ -12,6 +12,7 @@ type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRo
 
 interface ParamMap {
   "/": {}
+  "/_app": {}
   "/404": {}
   "/about": {}
   "/api/auth/callback": {}

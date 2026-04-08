@@ -1,13 +1,1 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/api/auth/callback/route": "app/api/auth/callback/route.js",
-  "/(auth)/signin/page": "app/(auth)/signin/page.js",
-  "/(auth)/signup/page": "app/(auth)/signup/page.js",
-  "/page": "app/page.js",
-  "/dashboard/admin/business-center/page": "app/dashboard/admin/business-center/page.js",
-  "/dashboard/admin/page": "app/dashboard/admin/page.js",
-  "/dashboard/instructor/page": "app/dashboard/instructor/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/staff/page": "app/dashboard/staff/page.js",
-  "/dashboard/student/page": "app/dashboard/student/page.js"
-}
+{}
