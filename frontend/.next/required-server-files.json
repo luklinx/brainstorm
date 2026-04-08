@@ -1,7 +1,11 @@
 {
   "version": 1,
   "config": {
-    "env": {},
+    "env": {
+      "NEXT_PUBLIC_SUPABASE_URL": "https://elesdexlehfmwfrbbrgd.supabase.co",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_q_mLpW70pa8UygpZE4WR-g_Y6CO9nKn",
+      "NEXT_PUBLIC_BACKEND_URL": "https://elesdexlehfmwfrbbrgd.supabase.co/functions/v1"
+    },
     "webpack": null,
     "eslint": {
       "ignoreDuringBuilds": false
@@ -50,7 +54,9 @@
       "path": "/_next/image",
       "loader": "default",
       "loaderFile": "",
-      "domains": [],
+      "domains": [
+        "ui-avatars.com"
+      ],
       "disableStaticImages": false,
       "minimumCacheTTL": 60,
       "formats": [
@@ -205,6 +211,9 @@
       "browserDebugInfoInTerminal": false,
       "optimizeRouterScrolling": false,
       "middlewareClientMaxBodySize": 10485760,
+      "serverActions": {
+        "bodySizeLimit": "2mb"
+      },
       "optimizePackageImports": [
         "lucide-react",
         "date-fns",
@@ -290,16 +299,6 @@
     "configFileName": "next.config.js",
     "turbopack": {
       "root": "/home/luklinx/Desktop/brainstormskills"
-    },
-    "_originalRewrites": {
-      "beforeFiles": [],
-      "afterFiles": [
-        {
-          "source": "/api/:path*",
-          "destination": "https://elesdexlehfmwfrbbrgd.supabase.co/functions/v1/:path*"
-        }
-      ],
-      "fallback": []
     }
   },
   "appDir": "/home/luklinx/Desktop/brainstormskills/frontend",
@@ -314,6 +313,11 @@
     ".next/server/middleware-build-manifest.js",
     ".next/server/middleware-react-loadable-manifest.js",
     ".next/react-loadable-manifest.json",
+    ".next/server/app-paths-manifest.json",
+    ".next/app-path-routes-manifest.json",
+    ".next/app-build-manifest.json",
+    ".next/server/server-reference-manifest.js",
+    ".next/server/server-reference-manifest.json",
     ".next/dynamic-css-manifest.json",
     ".next/server/dynamic-css-manifest.js",
     ".next/BUILD_ID",

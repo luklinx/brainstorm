@@ -1,6 +1,6 @@
 // frontend/tailwind.config.cjs
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/**/*.html'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './app/**/*.{js,jsx,ts,tsx}', './public/**/*.html'],
   theme: {
     extend: {
       colors: {

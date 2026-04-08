@@ -15,13 +15,7 @@
   "headers": [],
   "rewrites": {
     "beforeFiles": [],
-    "afterFiles": [
-      {
-        "source": "/api/:path*",
-        "destination": "https://elesdexlehfmwfrbbrgd.supabase.co/functions/v1/:path*",
-        "regex": "^/api(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
-      }
-    ],
+    "afterFiles": [],
     "fallback": []
   },
   "dynamicRoutes": [
@@ -48,6 +42,12 @@
       "regex": "^/(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
     },
     {
       "page": "/404",
@@ -78,6 +78,42 @@
       "regex": "^/courses(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/courses(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/dashboard/admin",
+      "regex": "^/dashboard/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/admin(?:/)?$"
+    },
+    {
+      "page": "/dashboard/admin/business-center",
+      "regex": "^/dashboard/admin/business\\-center(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/admin/business\\-center(?:/)?$"
+    },
+    {
+      "page": "/dashboard/instructor",
+      "regex": "^/dashboard/instructor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/instructor(?:/)?$"
+    },
+    {
+      "page": "/dashboard/staff",
+      "regex": "^/dashboard/staff(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/staff(?:/)?$"
+    },
+    {
+      "page": "/dashboard/student",
+      "regex": "^/dashboard/student(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/student(?:/)?$"
     },
     {
       "page": "/privacy",
